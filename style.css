@@ -1,0 +1,61 @@
+/******* Reset *********/
+@media (min-width: 600px) {
+  /* img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* To kolonner med samme bredde */
+    grid-template-rows: auto; /* Automatisk højde */
+    gap: 20px; /* Afstand mellem grid-elementer */
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  .about {
+    grid-column: span 2; /* Spænder over to kolonner */
+  }
+
+  .passion {
+    /* Kan tilpasses efter behov, f.eks.: */
+    grid-column: 1; /* Tager den første kolonne */
+  }
+
+  .beginning {
+    /* Tilpasses efter behov, f.eks.: */
+    grid-column: 2; /* Tager den anden kolonne */
+  }
+
+  /*h1 {
+    font-size: 20px;
+    color: rgb(171, 128, 128);
+    font-family: "Arial", sans-serif;
+    padding: 5%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+
